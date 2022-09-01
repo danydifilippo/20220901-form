@@ -4,6 +4,7 @@ body {
     margin: 3em 3em;
     font-family: 'Poppins', sans-serif;
     background-image: url(../img/sfondo.png);
+    background-position: center;
     font-size: 1.2em;
 }
 
@@ -16,11 +17,16 @@ main {
     box-shadow: 0 5px 10px rgb(0, 0, 0);
 }
 
-/* HEADER */
-header {
+header, footer {
     background: #3c88a8;
     background-image: linear-gradient(#3c88a8, #135673);
     color: white;
+    
+}
+
+/* HEADER */
+header {
+    
     text-transform: uppercase;
     font-weight: bold;
     font-weight: 600;
@@ -68,11 +74,17 @@ main p, main ul, ol, table {
 }
 
 .citazione {
-    color: rgb(162, 160, 160);
+    color: rgb(174, 174, 174);
 }
 
 main ul, ol {
     margin-left: 1.5em;
+}
+
+.label {
+    background-color: rgb(210, 208, 208);
+    border-radius: 0.3em;
+    border: 0.1em solid gray;
 }
 
 .bold_pink {
@@ -84,16 +96,22 @@ main ul, ol {
 /* TABELLE */
 
 table {
-    border: 0.3px solid white;
+    border-collapse: collapse;
     text-align: center;
     line-height: 3em;
     border-bottom: 2px solid #4769c2;
+}
+
+th, td {
+    border: 0.3px solid white;
+    width: 5em;
 }
 
 caption {
     font-style: italic;
     font-weight: bold;
     font-weight: 600;
+    line-height: normal;
 }
 
 th {
@@ -103,9 +121,66 @@ th {
     color: white;
 }
 
+.row_gray {
+    background-color: rgb(226, 226, 226)
+}
+
 
 /* FORM */
 
+h2 {
+    font-weight: bold;
+    font-weight: 500;
+}
+
+.link_blue {
+    color: rgb(72, 152, 170);
+}
+
+iframe {
+    border-radius: 1.5em;
+}
+
+section, aside div {
+    background-color:  rgb(226, 226, 226);
+    padding: 0.7em;
+}
+
+section h2, aside h2 {
+    text-transform: uppercase;
+}
+
 /* ELEMENTI NELL' ASIDE */
 
+aside div {
+    border: 1px solid rgb(168, 167, 167);
+}
+
+.data_right {
+    text-align: right;
+}
+
+input {
+    border: 0;
+    border-bottom: 0.1em dashed;
+}
+
+button {
+    background-color: #4769c2;
+    font-weight: bold;
+    color: white;
+}
+
 /* FOOTER */
+
+#link_magenta {
+    color: magenta;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 1.3em;
+    padding: 1.3em;
+}
